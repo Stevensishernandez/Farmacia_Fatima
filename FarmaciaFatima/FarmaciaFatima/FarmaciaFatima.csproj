@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E179511-01EE-4C3A-945B-31522E7C0A7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FarmaciaFatima</RootNamespace>
+    <AssemblyName>FarmaciaFatima</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Steven Sis\Desktop\instalador44\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>22</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>37AF917EDCA3B94D82EBC0144C8784C22CCE6206</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FarmaciaFatima_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\PresentacionObj.cs" />
+    <Compile Include="Modelos\venta.cs" />
+    <Compile Include="Procesos\AddProduct.cs" />
+    <Compile Include="Procesos\AgregarCarrito.cs" />
+    <Compile Include="Procesos\CrearReporte.cs" />
+    <Compile Include="Procesos\createRCostos.cs" />
+    <Compile Include="Procesos\createRInventario.cs" />
+    <Compile Include="Procesos\ManejadorDataBase.cs" />
+    <Compile Include="Procesos\RealizarVenta.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ventanas\Bodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\Bodega.Designer.cs">
+      <DependentUpon>Bodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\DataBaseAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\DataBaseAdmin.Designer.cs">
+      <DependentUpon>DataBaseAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\EditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\EditarProducto.Designer.cs">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\EditarProductoP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\EditarProductoP.Designer.cs">
+      <DependentUpon>EditarProductoP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\ReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\ReporteVentas.Designer.cs">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\VerProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventanas\VerProducto.Designer.cs">
+      <DependentUpon>VerProducto.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ventanas\Bodega.resx">
+      <DependentUpon>Bodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\DataBaseAdmin.resx">
+      <DependentUpon>DataBaseAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\EditarProducto.resx">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\EditarProductoP.resx">
+      <DependentUpon>EditarProductoP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\ReporteVentas.resx">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventanas\VerProducto.resx">
+      <DependentUpon>VerProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FarmaciaFatima_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-12-29 at 6.59.26 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\cuarentena.png" />
+    <None Include="Resources\iconos-de-dinero.png" />
+    <None Include="Resources\caja %282%29.png" />
+    <None Include="Resources\caja %281%29.png" />
+    <None Include="Resources\201706357 %282%29.jpeg" />
+    <None Include="Resources\productos-farmacia-1-1080x675.jpg" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\caja.png" />
+    <None Include="Resources\grafico %281%29.png" />
+    <None Include="Resources\grafico.png" />
+    <None Include="Resources\calculadora.png" />
+    <None Include="Resources\carro.png" />
+    <None Include="Resources\abrir-caja.png" />
+    <None Include="Resources\menos.png" />
+    <None Include="Resources\anadir.png" />
+    <None Include="Resources\circulo-plus %281%29.png" />
+    <None Include="Resources\inventario %281%29.png" />
+    <None Include="Resources\inventario.png" />
+    <None Include="Resources\buscar %282%29.png" />
+    <None Include="Resources\buscar %281%29.png" />
+    <None Include="Resources\busqueda-de-trabajo %283%29.png" />
+    <None Include="Resources\busqueda-de-trabajo %282%29.png" />
+    <None Include="Resources\busqueda-de-trabajo %281%29.png" />
+    <None Include="Resources\abrir-carpeta-con-documento %281%29.png" />
+    <None Include="Resources\GuardarComo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

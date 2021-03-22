@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FarmaciaFatima.exe" version="1.0.0.22" publicKeyToken="6c2befc4694e647f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FarmaciaFatima" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FarmaciaFatima.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu_UI_v1.5.3.dll" size="242176">
+      <assemblyIdentity name="Bunifu_UI_v1.5.3" version="1.5.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8bPg8nUKkQPkampKNPHPnRd3lyX5gELMJHXsZkhIAc8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FarmaciaFatima.exe" size="468480">
+      <assemblyIdentity name="FarmaciaFatima" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>R60SEL5Tib7TUUFBciR83+Zr3aKy6rD3e7g1YYdCqjQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.dll" size="353280">
+      <assemblyIdentity name="MetroFramework" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wsEtMbSETineMVlPyWMqNypVNjHeCgoEyK+RZo43z0k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.Design.dll" size="16896">
+      <assemblyIdentity name="MetroFramework.Design" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CkqWCC4ldn5GlwM2SbFsdqZS4SB1eizsq4CSrQ1xa2U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.Fonts.dll" size="672256">
+      <assemblyIdentity name="MetroFramework.Fonts" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yEOGmqylE1wtRylphfNcccqK9EMSiNBNSBxORsyT7iY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Database1.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FWGNQMLlk5mevxk6s9BF6ZdT22KQTmbQlAS/nyEjpSQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database1_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ERTvn8xynzfDDjOMSntO0agwr/UxSSY4QElcbHaPkjQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="FarmaciaFatima.exe.config" size="548">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Vf8YFXofAHjYxoXPW8xQOENKKNzb8QsIitTBQLnuEQ4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-A4PU5CM\Steven Sis" issuerKeyHash="ff6eea65f6fe54fe0f0f1e6acf279f6663b18cba" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>I7wyhzqDL939dl08tGhaN7oOM8T7rJ53JV5GqixQo4U=</DigestValue></Reference></SignedInfo><SignatureValue>VQO+uqJqjayeNJQc+fQm/xbq6eiU+ovl2QQZ/5RdKe3k4SOPQW8q3ueGbF6NS6Z7XiBf7zqBd8VI0cpoUX/0BIG8FDJBxeIQ4h3CHBuUv9O6Hcn95J4tMbUAJhmLAeK2B/qP23l5kb3a468XFLg/LoNP7WTqgOoEuzzCwc5Fe9g=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pieCzMNOSRu+UH0dsWYojkxGavxANGTvUYsgmVb5EvTQc5GD17MSIaXsTL5cEN9QrsCGnTHJLjeXdlHu3rkHgxrXKEawT8TCzKsvvDpecIAPhKWJhrbMLEo52Tcrxcfjnz1p+sZ1wssOfkvIxTwr6r0HD/638tyRw5EF5ygw2fU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="85a3502caa465e25779eacfbc4330eba375a68b43c5d76fddd2f833a8732bc23" Description="" Url=""><as:assemblyIdentity name="FarmaciaFatima.exe" version="1.0.0.22" publicKeyToken="6c2befc4694e647f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-A4PU5CM\Steven Sis</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kXmR+UoNopgtaE3iT3cjwkAzTfdiaGMwp8ZhCkbeI4g=</DigestValue></Reference></SignedInfo><SignatureValue>Qc9hcFFPcVKG5rYav5AoR51d9XcbDSG1gxqtdWI7Zq0jSW58k0YKtfV6nKLkDP22hGn2/wiw9wFMcnqxBPQ/pawC6ZnQ8JMPDWth+LzzQfAi9ZoYqTA5WSjyZr0/jsjL28BNuBACC6zbvIZu+FhlV3k3IBE56O56+hB+oN0ylhk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pieCzMNOSRu+UH0dsWYojkxGavxANGTvUYsgmVb5EvTQc5GD17MSIaXsTL5cEN9QrsCGnTHJLjeXdlHu3rkHgxrXKEawT8TCzKsvvDpecIAPhKWJhrbMLEo52Tcrxcfjnz1p+sZ1wssOfkvIxTwr6r0HD/638tyRw5EF5ygw2fU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQPtDFuT4cYIdBybaKpBgz0zANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDHjQARABFAFMASwBUAE8AUAAtAEEANABQAFUANQBDAE0AXABTAHQAZQB2AGUAbgAgAFMAaQBzMB4XDTIxMDEwMzIyMjc0MVoXDTIyMDEwNDA0Mjc0MVowPzE9MDsGA1UEAx40AEQARQBTAEsAVABPAFAALQBBADQAUABVADUAQwBNAFwAUwB0AGUAdgBlAG4AIABTAGkAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEApieCzMNOSRu+UH0dsWYojkxGavxANGTvUYsgmVb5EvTQc5GD17MSIaXsTL5cEN9QrsCGnTHJLjeXdlHu3rkHgxrXKEawT8TCzKsvvDpecIAPhKWJhrbMLEo52Tcrxcfjnz1p+sZ1wssOfkvIxTwr6r0HD/638tyRw5EF5ygw2fUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAuC19wE1/xUWMGCDFE7kv7wjMb318WsjyCDm585N54q/SGemdbobiA7Dsc82jCvsasA6Hs+IuT+ILzwLtFB4ZeDvLTgs0WOxpTs7geZSQq3YQh2023jWKs15IkLOGTCbPDK62FZiFs1WVadi2CcDHjEf8PAvjladE2RPkW6fEY4Q==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
